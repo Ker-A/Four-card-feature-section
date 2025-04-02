@@ -85,7 +85,8 @@ p{
     }
     /**Class*/
     .info{
-        margin: 0px 550px;
+        width: 50%;
+        margin: 0px auto;
     }
     .boxes{
         flex-direction: row;
