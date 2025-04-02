@@ -1,0 +1,103 @@
+:root{
+    --Red1: hsl(0, 78%, 62%);
+    --Cyan1: hsl(180, 62%, 55%);
+    --Orange1: hsl(34, 97%, 64%);
+    --Blue1: hsl(212, 86%, 64%);
+    --Titulo1: hsl(234, 12%, 34%);
+    --Parrafo1: hsl(212, 6%, 44%);
+    -Fondo1: hsl(0, 0%, 100%);
+}
+
+body{
+    background-color: var(--Fondo1);
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+   width: 95%; 
+}
+/**Txt*/
+h1{
+    color: var(--Titulo1);
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0px 10px;
+}
+h2{
+    color: var(--Parrafo1);
+    font-size: 25px;
+    font-weight: 200;
+}
+p{
+    color: var(--Parrafo1);
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10px;
+}
+
+/**Class*/
+.info{
+    text-align: center;
+    margin: 0px 10px;
+}
+.boxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.card{
+    background-color: white    ;
+    height: 200px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0px 10px 20px 0px var(--Parrafo1);
+    border-radius: 10px;
+}
+.card1{
+    border-top: 10px solid var(--Cyan1);
+}
+.card2{
+    border-top: 10px solid var(--Red1);
+}
+.card3{
+    border-top: 10px solid var(--Orange1);
+}
+.card4{
+    border-top: 10px solid var(--Blue1);
+}
+.imgbox{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+@media (min-width: 750px) {
+    /**Txt*/
+    h1, h2{
+        font-size: 40px;
+    }
+    p{
+        font-size: 25px;
+    }
+    /**Class*/
+    .info{
+        margin: 0px 550px;
+    }
+    .boxes{
+        flex-direction: row;
+    }   
+    .card{
+        width: 400px;
+    }
+    .boxes h1{
+        font-size: 25px;
+        margin: 0px auto;
+    }
+    .boxes p{
+        font-size: 20px;
+    }
+}
